@@ -41,18 +41,18 @@ int main(int argc, char* argv[])
 		int rank;
 		iss >> rank;
 
-		char name[5];
+		char name[8];
 		iss.ignore(1);
 		iss.get(name, std::numeric_limits<int>::max(), '-');
 
-		char data[20];
+		char data[30];
 		iss.ignore(1);
 		iss.get(data, std::numeric_limits<int>::max(), '-');
 		iss.ignore(1);
 		data[std::strlen(data) - 1] = '-';
 		iss.get(data + std::strlen(data), std::numeric_limits<int>::max(), '-');
 		iss.ignore(1);
-		char treatment[10];
+		char treatment[15];
 		iss >> treatment;
 
 		for (int i = 0; i < 3; i++)
